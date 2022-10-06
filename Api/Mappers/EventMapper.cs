@@ -36,7 +36,7 @@ namespace Api.Mappers
         {
             FillConferenceEntityWithDto(dto, entity);
             entity.NumberOfDays = dto.NumberOfDays;
-            entity.AccomodationCostType = dto.AccomodationCostType;
+            entity.AccomodationCostType = dto.AccommodationCostType;
         }
 
         public void FillConcertEntityWithDto(ConcertDto dto, ConcertEntity entity)
