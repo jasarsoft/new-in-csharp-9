@@ -16,9 +16,16 @@ namespace ExperimentsWithRecords
             EventPriceDto dto = new(1, now, "Test", EventType.Concert, "Music hall", 80, 100);
             EventPriceDto dto2 = new(1, now, "Test", EventType.Concert, "Music hall", 80, 100);
             EventPriceDtoToo dtoToo = new(1, now, "Test", EventType.Concert, "Music hall", 80, 100);
-            Console.WriteLine($"{dto}");
-            Console.WriteLine($"{dto == dto2}");
-            Console.WriteLine($"{dto == dtoToo}");
+
+            var dto3 = dto with { Name = "Concert" };
+            DtoBase dto4 = dto with { Name = "Concert" };
+            var isEventPrice = dto4 is EventPriceDto;
+
+            Console.WriteLine($"dto: {dto}");
+            Console.WriteLine($"dto == dto2: {dto == dto2}");
+            Console.WriteLine($"dto == dtoToo: {dto == dtoToo}");
+            Console.WriteLine($"dto3: {dto3}");
+            Console.WriteLine($"isEventPrice: {isEventPrice}");
         }
     }
 }
