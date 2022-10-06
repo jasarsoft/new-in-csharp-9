@@ -14,11 +14,11 @@ namespace Shared.Dtos
             Venue = venue;
         }
 
-        public int Id { get; }
-        public DateTimeOffset Date { get; }
-        public string Name { get; }
-        public EventType EventType { get; }
-        public string Venue { get; }
+        public int Id { get; init; }
+        public DateTimeOffset Date { get; init; }
+        public string Name { get; init; }
+        public EventType EventType { get; init; }
+        public string Venue { get; init; }
     }
 
     public class EventPriceDto : DtoBase
@@ -30,8 +30,8 @@ namespace Shared.Dtos
             TicketPrice = ticketPrice;
         }
 
-        public int PercentageSold { get; }
-        public int TicketPrice { get; }
+        public int PercentageSold { get; init; }
+        public int TicketPrice { get; init; }
 
         public void Deconstruct(out int id, out DateTimeOffset date, out string name, out EventType eventType,
             out string venue, out int percentageSold, out int ticketPrice)
@@ -58,10 +58,10 @@ namespace Shared.Dtos
             Sold = sold;
         }
 
-        public int Capacity { get; }
-        public int Sold { get; }
-        public CostType VenueCostType { get; }
-        public CostType MarketingCostType { get; }
+        public int Capacity { get; init; }
+        public int Sold { get; init; }
+        public CostType VenueCostType { get; init; }
+        public CostType MarketingCostType { get; init; }
     }
 
     public class ConferenceDto : EventDto
@@ -75,8 +75,8 @@ namespace Shared.Dtos
             CateringCosts = cateringCosts;
         }
 
-        public int BadgeCosts { get; }
-        public int CateringCosts { get; }
+        public int BadgeCosts { get; init; }
+        public int CateringCosts { get; init; }
     }
 
     public class MultiDayConferenceDto : ConferenceDto
@@ -92,8 +92,8 @@ namespace Shared.Dtos
             AccomodationCostType = accomodationCostType;
         }
 
-        public int NumberOfDays { get; }
-        public CostType AccomodationCostType { get; }
+        public int NumberOfDays { get; init; }
+        public CostType AccomodationCostType { get; init; }
     }
 
     public class ConcertDto : EventDto
@@ -107,8 +107,8 @@ namespace Shared.Dtos
             ArtistCostType = artistCostType;
         }
 
-        public int ArtistCosts { get; }
-        public CostType ArtistCostType { get; }
+        public int ArtistCosts { get; init; }
+        public CostType ArtistCostType { get; init; }
     }
 
     public class SportsGameDto : EventDto
@@ -122,7 +122,7 @@ namespace Shared.Dtos
             CostsPerPlayer = costsPerPlayer;
         }
 
-        public int NumberOfPlayers { get; }
-        public int CostsPerPlayer { get; }
+        public int NumberOfPlayers { get; init; }
+        public int CostsPerPlayer { get; init; }
     }
 }
