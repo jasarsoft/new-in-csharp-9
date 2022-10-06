@@ -1,10 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{BACB6BEE-3ED9-4F58-851E-723D16A91379}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{BACB6BEE-3ED9-4F58-851E-723D16A91379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{8FECAEE0-731B-4CD9-8DE2-6E7C381408FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{8FECAEE0-731B-4CD9-8DE2-6E7C381408FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{8236E3F4-9D86-48A9-BDC5-BE05024DC9C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{8236E3F4-9D86-48A9-BDC5-BE05024DC9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentsWithRecords", "ExperimentsWithRecords\ExperimentsWithRecords.csproj", "{7C23E5D5-7066-401B-930E-EA7F95C760F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +29,15 @@ Global
 		{8236E3F4-9D86-48A9-BDC5-BE05024DC9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8236E3F4-9D86-48A9-BDC5-BE05024DC9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8236E3F4-9D86-48A9-BDC5-BE05024DC9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C23E5D5-7066-401B-930E-EA7F95C760F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C23E5D5-7066-401B-930E-EA7F95C760F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C23E5D5-7066-401B-930E-EA7F95C760F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C23E5D5-7066-401B-930E-EA7F95C760F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C1E8D94-7F33-430B-A14C-0D1A3F8EB592}
 	EndGlobalSection
 EndGlobal
